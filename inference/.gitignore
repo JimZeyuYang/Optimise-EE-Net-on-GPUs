@@ -1,0 +1,10 @@
+bin/
+
+
+# ignoring weights file larger than 20MB
+# using:
+# find . -name '*wts' -size +20M | cut -c2-  |cat >> .gitignore
+/data/S_VGG16_CIFAR10.wts
+/data/B_LenetMassiveLayer_ImageNet.wts
+/data/B_VGG_ImageNet.wts
+/data/B_Alexnet_ImageNet.wts
