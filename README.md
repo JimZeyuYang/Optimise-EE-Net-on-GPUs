@@ -1,2 +1,2 @@
-# Performance-Landscape-of-Early-Exit-NN
+# Optimise the inference execiton of Early-Exit DNNs on GPUs
 
