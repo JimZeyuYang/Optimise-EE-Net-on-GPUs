@@ -1,0 +1,31 @@
+B_LenetRedesigned_MNIST(
+  (backbone): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(1, 5, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (1): Sequential(
+      (0): Conv2d(5, 10, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+      (3): Conv2d(10, 20, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+      (6): Flatten(start_dim=1, end_dim=-1)
+      (7): Linear(in_features=320, out_features=84, bias=True)
+    )
+  )
+  (exits): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(5, 10, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Linear(in_features=490, out_features=10, bias=False)
+    )
+    (1): Sequential(
+      (0): Linear(in_features=84, out_features=10, bias=False)
+    )
+  )
+)

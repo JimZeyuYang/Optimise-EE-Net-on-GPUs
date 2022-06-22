@@ -1,0 +1,19 @@
+__pycache__/
+checkpoints/
+data/
+*.wts
+
+# keep the dataset preparation scripts
+!prepare_imagenet.py
+!prepare_tinyimagenet.sh
+
+# ignoring weights file larger than 20MB
+# using:
+# find . -name '*wts' -size +20M | cat >> .gitignore
+./outputs/wts/S_VGG16_CIFAR10.wts
+./outputs/wts/B_VGG_ImageNet.wts
+./outputs/wts/B_Alexnet_ImageNet.wts
+./outputs/wts/S_VGG16_CIFAR10.wts
+./outputs/wts/B_LenetMassiveLayer_ImageNet.wts
+./outputs/wts/B_VGG_ImageNet.wts
+./outputs/wts/B_Alexnet_ImageNet.wts
